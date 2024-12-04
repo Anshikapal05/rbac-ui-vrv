@@ -14,7 +14,6 @@ The app is built using **Vite** for fast development and **React** for the front
 - **Routing**: Conditional routing based on the role selected during login.
 - **React**: Utilizes React for UI components and handling logic.
 
-
 ## Installation
 
 To get started with the project, follow these steps:
@@ -32,7 +31,6 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/rbac-vite-project.git
    cd rbac-vite-project
-   ```
 
 2. **Install Dependencies**
    ```bash
