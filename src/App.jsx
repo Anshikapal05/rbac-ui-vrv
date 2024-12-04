@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./pages/Login/Login";
-import Signup from "./pages/Signup/Signup";
+import Login from "./pages/Login/Login.jsx";
+import Signup from "./pages/Signup/Signup.jsx";
 import UserDashboard from "./pages/UserDashboard/UserDashboard";
 import GuestDashboard from "./pages/GuestDashboard/GuestDashboard";
 import AdminDashboard from "./pages/AdminDashboard"; // Import the new AdminDashboard component

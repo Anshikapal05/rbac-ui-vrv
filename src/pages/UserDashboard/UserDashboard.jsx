@@ -22,7 +22,7 @@ const UserDashboard = () => {
             <div className="dashboard-cards">
                 <div className="card">
                     <h3 className="card-title">Total Number of Guest Cards</h3>
-                    <p className="card-content">5</p> {/* Example count */}
+                    <p className="card-content">10</p> {/* Example count */}
                 </div>
                 <div className="card">
                     <h3 className="card-title">How to Manage Guest Cards</h3>

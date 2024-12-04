@@ -7,20 +7,20 @@
 }
 
 :root {
-  --clr-primary: #29221d;
-  --clr-primar-light: #473b33;
-  --clr-secondary: #1e1611;
+  --clr-primary: #8b76a3; /* Pastel purple */
+  --clr-primary-light: #a78bb3; /* Lighter pastel purple */
+  --clr-secondary: #6a4c8c; /* Purple-blue */
   --clr-white: #fff;
   --clr-black: #000;
-  --clr-pumpkin: #fe6c00;
-  --clr-silver: #a8a5a6;
-  --clr-silver-v1: #bdbabb;
-  --clr-scarlet: #fe1e00;
-  --clr-scarlet-v1: rgb(254, 30, 0, 0.79);
-  --clr-green: #00fe93;
-  --clr-yellow: #fec80a;
-  --clr-jet: #302924;
-  --clr-peach: #ffc397;
+  --clr-pumpkin: #ae9cc2; /* Soft purple */
+  --clr-silver: #d8c9d1; /* Light grayish purple */
+  --clr-silver-v1: #d0b9cc; /* Lighter grayish purple */
+  --clr-scarlet: #a13f88; /* Muted pinkish purple */
+  --clr-scarlet-v1: rgba(161, 63, 136, 0.79);
+  --clr-green: #a8d5ba; /* Pastel green */
+  --clr-yellow: #d9d4fd; /* Light pastel yellow */
+  --clr-jet: #4e3b60; /* Dark purple-blue */
+  --clr-peach: #f0d3d7; /* Soft peach */
   --font-family-bai: "Bai Jamjuree", sans-serif;
   --transition-default: all 300ms ease-in-out;
 }
@@ -37,7 +37,7 @@ body {
 .dashboard-container {
   width: 100%;
   max-width: 1200px;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-primary) !important;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
   padding: 24px;
@@ -71,13 +71,13 @@ body {
 }
 
 .card:hover {
-  background-color: var(--clr-primar-light);
+  background-color: var(--clr-primary-light);
 }
 
 .card-title {
   font-size: 20px;
   font-weight: 600;
-  color: var(--clr-pumpkin);
+  color: #ae9cc2;
   margin-bottom: 12px;
 }
 
@@ -103,7 +103,6 @@ body {
   color: var(--clr-pumpkin);
 }
 
-
 /* Logout Button Container */
 .logout-btn-container {
   display: flex;
@@ -113,21 +112,21 @@ body {
 
 /* Beautified Logout Button */
 .logout-btn {
-  background: linear-gradient(45deg, var(--clr-scarlet), var(--clr-pumpkin)); /* Gradient background */
-  color: var(--clr-white);
-  padding: 12px 30px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, var(--clr-pumpkin), var(--clr-yellow)); /* Gradient background */
   border: none;
   border-radius: 8px;
+  color: var(--clr-white);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for background and scaling */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: var(--transition-default);
 }
 
 .logout-btn:hover {
-  background: linear-gradient(45deg, var(--clr-scarlet-v1), var(--clr-pumpkin)); /* Hover effect with a different gradient */
-  transform: scale(1.05); /* Slight scale effect on hover */
+  background: linear-gradient(90deg, var(--clr-yellow), var(--clr-pumpkin)); /* Hover effect with reversed gradient */
+  transform: scale(1.02); /* Slight scale effect on hover */
 }
 
 .logout-btn:focus {
@@ -137,9 +136,4 @@ body {
 /* Active button state */
 .logout-btn:active {
   transform: scale(0.98); /* Button slightly shrinks when clicked */
-}
-
-/* Add a subtle glow on hover */
-.logout-btn:hover {
-  box-shadow: 0 4px 10px rgba(255, 94, 77, 0.6);
 }

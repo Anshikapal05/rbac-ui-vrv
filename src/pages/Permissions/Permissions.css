@@ -7,20 +7,20 @@
 }
 
 :root {
-  --clr-primary: #29221d;
-  --clr-primar-light: #473b33;
-  --clr-secondary: #1e1611;
+  --clr-primary: #7a5d9e; /* Pastel purple */
+  --clr-primary-light: #a78bb3; /* Lighter pastel purple */
+  --clr-secondary: #6a4c8c; /* Purple-blue */
   --clr-white: #fff;
   --clr-black: #000;
-  --clr-pumpkin: #fe6c00;
-  --clr-silver: #a8a5a6;
-  --clr-silver-v1: #bdbabb;
-  --clr-scarlet: #fe1e00;
-  --clr-scarlet-v1: rgb(254, 30, 0, 0.79);
-  --clr-green: #00fe93;
-  --clr-yellow: #fec80a;
-  --clr-jet: #302924;
-  --clr-peach: #ffc397;
+  --clr-pumpkin: #9b66d9; /* Soft purple */
+  --clr-silver: #d8c9d1; /* Light grayish purple */
+  --clr-silver-v1: #d0b9cc; /* Lighter grayish purple */
+  --clr-scarlet: #a13f88; /* Muted pinkish purple */
+  --clr-scarlet-v1: rgba(161, 63, 136, 0.79);
+  --clr-green: #a8d5ba; /* Pastel green */
+  --clr-yellow: #d9d4fd; /* Light pastel yellow */
+  --clr-jet: #4e3b60; /* Dark purple-blue */
+  --clr-peach: #f0d3d7; /* Soft peach */
   --font-family-bai: "Bai Jamjuree", sans-serif;
   --transition-default: all 300ms ease-in-out;
 }

@@ -18,10 +18,10 @@ import wallet from "../assets/icons/wallet.svg";
 import wealth from "../assets/icons/wealth.svg";
 
 // person images
-import person_one from "../assets/images/women1.jpeg";
-import person_two from "../assets/images/women2.jpeg";
-import person_three from "../assets/images/women3.jpeg";
-import person_four from "../assets/images/women4.jpeg";
+import person_one from "../assets/images/women1.jpg";
+import person_two from "../assets/images/women2.jpg";
+import person_three from "../assets/images/women3.jpg";
+import person_four from "../assets/images/women4.jpg";
 
 export const iconsImgs = {
     alert, bell, bills, budget, card, check, empty_check, gears, home, menu, plane, plus, report, search, user, wallet, wealth

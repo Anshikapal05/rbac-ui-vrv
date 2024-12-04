@@ -1,82 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #997cbb; /* Pastel Purple */
+  --clr-primary-light: #a78bb3; /* Lighter Pastel Purple */
+  --clr-secondary: #6a4c8c; /* Purple-Blue */
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-pumpkin: #f5a623; /* Soft Yellow-Orange */
+  --clr-silver: #d8c9d1; /* Light Grayish Purple */
+  --clr-silver-v1: #e0d4e1; /* Lighter Grayish Purple */
+  --clr-scarlet: #f5a623; /* Soft Peach-Red */
+  --clr-scarlet-v1: rgba(245, 166, 35, 0.79);
+  --clr-green: #a8d5ba; /* Pastel Green */
+  --clr-yellow: #d9d4fd; /* Light Pastel Yellow */
+  --clr-jet: #4e3b60; /* Dark Purple-Blue */
+  --clr-peach: #f0d3d7; /* Soft Peach */
+  --font-family-bai: "Bai Jamjuree", sans-serif;
+  --transition-default: all 300ms ease-in-out;
+}
+
 /* Container styling */
 .user-management-container {
-    width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--clr-primary);
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Title styling */
-  .page-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--clr-white);
-  }
-  
-  /* Cards container with Flexbox */
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-    padding: 10px;
-  }
-  
-  /* Individual card styling */
-  .user-card {
-    background-color: var(--clr-secondary);
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
-    padding: 20px;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    width: 300px;
-    box-sizing: border-box;
-  }
-  
-  /* Hover effect for the cards */
-  .user-card:hover {
-    transform: translateY(-5px);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px;
-  }
-  
-  /* Card header styling */
-  .user-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .user-name {
-    font-size: 20px;
-    color: var(--clr-white);
-  }
-  
-  .user-role {
-    background-color: var(--clr-scarlet);
-    color: var(--clr-white);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
-  
-  /* Card body text */
-  .user-card-body p {
-    font-size: 14px;
-    color: var(--clr-silver);
-    margin: 8px 0;
-  }
-  
-  .user-card-body strong {
-    color: var(--clr-white);
-  }
-  
+  width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--clr-primary) !important;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling */
+.page-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--clr-white);
+}
+
+/* Cards container with Flexbox */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+/* Individual card styling */
+.user-card {
+  background-color: var(--clr-secondary);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+/* Hover effect for the cards */
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px;
+}
+
+/* Card header styling */
+.user-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-name {
+  font-size: 20px;
+  color: var(--clr-white);
+}
+
+.user-role {
+  background-color: var(--clr-scarlet);
+  color: var(--clr-white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Card body text */
+.user-card-body p {
+  font-size: 14px;
+  color: var(--clr-silver);
+  margin: 8px 0;
+}
+
+.user-card-body strong {
+  color: var(--clr-white);
+}

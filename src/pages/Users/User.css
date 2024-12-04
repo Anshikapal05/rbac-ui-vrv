@@ -54,7 +54,7 @@
 
 /* Hover effect for rows */
 .user-table tr:hover {
-    background-color: var(--clr-primar-light); /* Light gray hover effect */
+    background-color: var(--clr-primary-light); /* Light purple hover effect */
 }
 
 /* Table data styling */
@@ -67,7 +67,7 @@
 .edit-button {
     padding: 8px 16px;
     font-size: 14px;
-    background-color: var(--clr-green); /* Use green color for the button */
+    background-color: var(--clr-green); /* Use pastel green color for the button */
     color: var(--clr-white); /* White text color */
     border: none;
     border-radius: 4px;
@@ -77,5 +77,15 @@
 
 /* Edit button hover effect */
 .edit-button:hover {
-    background-color: var(--clr-green); /* Darker green on hover */
+    background-color: var(--clr-green); /* Slightly darker green on hover */
+}
+
+/* Button active state */
+.edit-button:active {
+    transform: scale(0.98); /* Slight shrink effect when clicked */
+}
+
+/* Button focus state */
+.edit-button:focus {
+    outline: none;
 }

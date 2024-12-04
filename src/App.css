@@ -6,24 +6,26 @@
   box-sizing: border-box;
 }
 
+/* app.css - Global Styles */
 :root {
-  --clr-primary: #29221d;
-  --clr-primar-light: #473b33;
-  --clr-secondary: #1e1611;
+  --clr-primary: #9b7fbc; /* Pastel Purple */
+  --clr-primary-light: #a78bb3; /* Light Pastel Purple */
+  --clr-secondary: #6a4c8c; /* Purple-Blue */
   --clr-white: #fff;
   --clr-black: #000;
-  --clr-pumpkin: #fe6c00;
-  --clr-silver: #a8a5a6;
-  --clr-silver-v1: #bdbabb;
-  --clr-scarlet: #fe1e00;
-  --clr-scarlet-v1: rgb(254, 30, 0, 0.79);
-  --clr-green: #00fe93;
-  --clr-yellow: #fec80a;
-  --clr-jet: #302924;
-  --clr-peach: #ffc397;
+  --clr-pumpkin: #846aa4; /* Soft Purple */
+  --clr-silver: #d8c9d1; /* Light Grayish Purple */
+  --clr-silver-v1: #d0b9cc; /* Lighter Grayish Purple */
+  --clr-scarlet: #a13f88; /* Muted Pinkish Purple */
+  --clr-scarlet-v1: rgba(161, 63, 136, 0.79);
+  --clr-green: #a8d5ba; /* Pastel Green */
+  --clr-yellow: #d9d4fd; /* Light Pastel Yellow */
+  --clr-jet: #4e3b60; /* Dark Purple-Blue */
+  --clr-peach: #f0d3d7; /* Soft Peach */
   --font-family-bai: "Bai Jamjuree", sans-serif;
   --transition-default: all 300ms ease-in-out;
 }
+
 
 body {
   font-family: var(--font-family-bai);
@@ -107,7 +109,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1400px) {

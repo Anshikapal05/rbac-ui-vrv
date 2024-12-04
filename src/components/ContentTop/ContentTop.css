@@ -17,7 +17,7 @@
 }
 
 .content-top-title {
-  color: var(--clr-white);
+  color: var(--clr-white); /* White color for title */
   font-size: 20px;
   font-weight: 600;
 }
@@ -27,7 +27,6 @@
 }
 .content-top-btns {
   display: flex;
-  
 }
 
 .content-top-btn img {
@@ -35,7 +34,7 @@
 }
 
 .content-top-btn img:hover {
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); /* White color on hover */
 }
 
 .content-top-left {
@@ -43,21 +42,37 @@
   align-items: center;
 }
 
-/* Logout button style */
-.logout-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--clr-white);
+/* Logout Button Container */
+.logout-btn-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.logout-btn img {
-  width: 24px;
-  transition: filter 0.3s ease;
+/* Beautified Logout Button */
+.logout-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, var(--clr-pumpkin), var(--clr-yellow)); /* Gradient background */
+  border: none;
+  border-radius: 8px;
+  color: var(--clr-white);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition-default);
 }
 
-.logout-btn:hover img {
-  filter: brightness(0) invert(1); /* Change on hover */
+.logout-btn:hover {
+  background: linear-gradient(90deg, var(--clr-yellow), var(--clr-pumpkin)); /* Hover effect with reversed gradient */
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.logout-btn:focus {
+  outline: none;
+}
+
+/* Active button state */
+.logout-btn:active {
+  transform: scale(0.98); /* Button slightly shrinks when clicked */
 }

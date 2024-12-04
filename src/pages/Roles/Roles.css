@@ -1,102 +1,101 @@
 /* Container styling */
 .roles-table-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--clr-secondary);  /* Background from color palette */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Table title styling */
-  .table-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--clr-white);  /* White for title */
-  }
-  
-  /* Table styling */
-  .roles-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  /* Table header and cell styling */
-  .roles-table th,
-  .roles-table td {
-    padding: 12px 16px;
-    text-align: center;
-    border-bottom: 1px solid var(--clr-silver-v1);  /* Silver border for separation */
-  }
-  
-  .roles-table th {
-    background-color: var(--clr-pumpkin);  /* Pumpkin for header */
-    color: var(--clr-white);  /* White text for header */
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .roles-table tr:hover {
-    background-color: var(--clr-primar-light);  /* Lighter primary color for row hover */
-  }
-  
-  .roles-table td {
-    font-size: 14px;
-    color: var(--clr-silver);  /* Silver for regular cell text */
-  }
-  
-  /* Icon styling */
-  .icon {
-    font-size: 16px;
-  }
-  
-  .tick {
-    color: var(--clr-green);  /* Green for tick */
-  }
-  
-  .cross {
-    color: var(--clr-scarlet);  /* Scarlet for cross */
-  }
-  
-  /* Button styling */
-  .edit-button,
-  .remove-button {
-    padding: 8px 16px;
-    font-size: 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 0 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .edit-button {
-    background-color: var(--clr-yellow);  /* Yellow for edit button */
-    color: var(--clr-white);
-  }
-  
-  .edit-button:hover {
-    background-color: var(--clr-primar-light);  /* Darker yellow on hover */
-  }
-  
-  .remove-button {
-    background-color: var(--clr-scarlet);  /* Red for remove button */
-    color: var(--clr-white);
-  }
-  
-  .remove-button:hover {
-    background-color: var(--clr-scarlet-v1);  /* Darker red on hover */
-  }
-  
-  /* Additional styling for actions column */
-  .roles-table td button {
-    font-weight: 600;
-  }
-  
-  .roles-table td button:active {
-    transform: scale(0.98);
-  }
-  
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--clr-secondary); /* Background from color palette */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table title styling */
+.table-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--clr-white); /* White for title */
+}
+
+/* Table styling */
+.roles-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Table header and cell styling */
+.roles-table th,
+.roles-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid var(--clr-silver-v1); /* Silver border for separation */
+}
+
+.roles-table th {
+  background-color: var(--clr-primary); /* Primary color for header */
+  color: var(--clr-white); /* White text for header */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.roles-table tr:hover {
+  background-color: var(--clr-primary-light); /* Lighter primary color for row hover */
+}
+
+.roles-table td {
+  font-size: 14px;
+  color: var(--clr-yellow); /* Darker color for text in rows */
+}
+
+/* Icon styling */
+.icon {
+  font-size: 16px;
+}
+
+.tick {
+  color: var(--clr-green); /* Green for tick */
+}
+
+.cross {
+  color: var(--clr-scarlet); /* Scarlet for cross */
+}
+
+/* Button styling */
+.edit-button,
+.remove-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 4px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: var(--clr-yellow); /* Yellow for edit button */
+  color: var(--clr-white);
+}
+
+.edit-button:hover {
+  background-color: var(--clr-primary-light); /* Darker yellow on hover */
+}
+
+.remove-button {
+  background-color: var(--clr-scarlet); /* Red for remove button */
+  color: var(--clr-white);
+}
+
+.remove-button:hover {
+  background-color: var(--clr-scarlet-v1); /* Darker red on hover */
+}
+
+/* Additional styling for actions column */
+.roles-table td button {
+  font-weight: 600;
+}
+
+.roles-table td button:active {
+  transform: scale(0.98);
+}

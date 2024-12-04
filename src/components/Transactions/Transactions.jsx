@@ -1,7 +1,7 @@
 import "./Transactions.css";
 import { transactions } from "../../data/data";
 import { iconsImgs } from "../../utils/images";
-
+import "../../App.css";
 const Transactions = () => {
   return (
     <div className="grid-one-item grid-common grid-c2">
@@ -24,7 +24,7 @@ const Transactions = () => {
                                 <p className="text">{ transaction.name } <span>{ transaction.date }</span></p>
                             </div>
                             <div className="grid-item-r">
-                                <span className="text-scarlet">$ { transaction.amount }</span>
+                                <span>$ { transaction.amount }</span>
                             </div>
                         </div>
                     ))
